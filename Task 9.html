@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <script>
+        //Create a html form which has three textbox and 1 button.
+        function Name() {
+            g = nfrm.fn.value
+            x = g + " " + g + " " + g;
+            alert("Your Full Name Is " + x);
+        }
+
+        //Write a JavaScript program to check if a character is vowel or consonant using an html form.
+        function vowels() {
+            if (v == "a" || v == "e" || v == "i" || v == "o" || v == "u" || v == "A" || v == "E" || v == "I" || v == "O" || v == "U") {
+                document.write("Enter Alphabet is a vowel");
+            }
+            else {
+                document.write("Entered Alphabet is a Consonant");
+            }
+        }
+
+        //write a JavaScript program to create a function called method1() to find the greatest number out of four numbers(function should have formal parameters).
+        function method1(a, b, c, d) {
+            if (a > b && a > c && a > d) {
+                document.write(a + " is greatest number");
+            }
+            else if (b > a && b > c && b > d) {
+                document.write(b + " is greatest number");
+            }
+            else if (c > a && c > b && c > d) {
+                document.write(c + " is greatest number");
+            }
+            else {
+                document.write(d + " is greatest number");
+            }
+        }
+
+        //Create a Web Page that use image, change the height & width of an image as the mouse pointer moves over the image and moves out the image.
+        function big(x) {
+            x.style.height = "400px";
+            x.style.width = "600px";
+        }
+        function small(x) {
+            x.style.height = "150px";
+            x.style.width = "200px"
+        }
+
+        //Create a Web Page that use heading (h1), change the height, width, background color, text color of heading as the mouse pointer click or release on the text.
+        function down(x) {
+            x.style.height = "50px";
+            x.style.width = "300px";
+            x.style.backgroundColor = "yellow";
+            x.style.color = "blue";
+        }
+        function up(x) {
+            x.style.height = "50px";
+            x.style.width = "500px";
+            x.style.backgroundColor = "red";
+            x.style.color = "green";
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <!--Create a html form which has three textbox and 1 button.-->
+    <form name="nfrm">
+        FirstName:<input type="text" name="fn"><br><br>
+        MiddleName:<input type="text" name="mn"><br><br>
+        LastName:<input type="text" name="ln"><br><br>
+        <button onclick="Name()">Click Me</button>
+        <hr>
+
+        <!--Write a JavaScript program to check if a character is vowel or consonant using an html form.-->
+        <form name="form">
+            Enter One Alphabe:<input type="text" name="al">
+            <button onclick="vowels()">Click Me</button>
+            <hr>
+        </form>
+        <!--write a JavaScript program to create a function called method1() to find the greatest number out of four numbers(function should have formal parameters)-->
+        <script>
+            let x = method1(115, 40, 60, 25);
+        </script>
+        <hr>
+
+        <!--Create a Web Page that use image, change the height & width of an image as the mouse pointer moves over the image and moves out the image.-->
+        <img src="C:\Users\HP\Desktop\wallpaperflare.com_wallpaper (1).jpg"
+            style="height: 200px; width: 300px;" onmouseover="big(this)" onmouseout="small(this)">
+        <hr>
+        <hr>
+
+        <!--Create a Web Page that use heading (h1), change the height, width, background color, text color of heading as the mouse pointer click or release on the text.-->
+        <h1 onmousedown="down(this)" onmouseup="up(this)">Hello World.</h1>
+
+</body>
+
+</html>

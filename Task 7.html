@@ -1,0 +1,100 @@
+<html>
+
+<body>
+    <script>
+        //Write a JS program to display array elements in ascending and descending order.
+        ar1 = new Array(87, 92, 26, 18, 54);
+        document.write(ar1.sort(), "<br>");
+        document.write(ar1.sort().reverse(), "<hr>");
+
+        //Write a JS program to display all array values with index numbers using for loop and for…of loop.
+        //(for loop)
+        ar2 = new Array(23, 43, 54, 56, 93);
+        for (i = 0; i < ar2.length; i++) {
+            document.write(i, ",", ar2[i], "<br>");
+        }
+        document.write("<br>");
+
+        //(for of loop)
+        itr = ar2.entries();
+        for (ans of itr) {
+            document.write(ans, "<br>")
+        }
+        document.write("<hr>");
+
+        //Write a JS program to remove first value from the array.
+        ar2.shift();
+        document.write(ar2);
+        document.write("<hr>");
+
+        //Write a JS program to display all array values using for loop and for…of loop.
+        //(for loop)
+        ar3 = new Array(23, 43, 54, 56, 93);
+        for (i = 0; i < ar3.length; i++) {
+            document.write(ar3[i], "<br>")
+        }
+        document.write("<br>")
+        //(for of loop)
+        itr = ar3.values();
+        for (val of itr) (
+            document.write(val, "<br>")
+        )
+        document.write("<hr>");
+
+        //Write a JS program to display all array index numbers using for loop and for…of loop.
+        //(for loop)
+        for (i = 0; i < ar3.length; i++) {
+            document.write(i, "<br>")
+        }
+        document.write("<br>");
+
+        //for of loop
+        itr = ar3.keys();
+        for (keys of itr) {
+            document.write(keys, "<br>")
+        }
+        document.write("<hr>");
+
+        //Write a JS program to display all character of “HelloJavaScript” using for loop, for…of loop & for…in loop.(for loop)
+        str = new String("HelloJavaScript");
+        for (i = 0; i < str.length; i++) {
+            document.write(str[i])
+        }
+        document.write("<br>");
+
+        //(for of loop)
+        for (st1 of str) {
+            document.write(st1);
+        }
+        document.write("<br>");
+
+        //(for in loop)
+        for (st2 in str) {
+            document.write(str[st2]);
+        }
+        document.write("<hr>");
+
+        //Write a JS program to insert value in beginning of array.
+        ar3.unshift(1234);
+        document.write(ar3);
+        document.write("<hr>");
+
+        //Write a Js program to display 3rd index value from string “HelloJavaScript”.
+        document.write(str.charAt(3));
+        document.write("<hr>");
+
+        //Write a Js program to merge 3 different string variable value using concat ().
+        str1 = new String("Hello ");
+        str2 = new String("My ");
+        str3 = new String("world");
+        document.write(str1.concat(str2, str3));
+        document.write("<hr>");
+
+        //Write a JS program to find index of character ‘J’ from string “HelloJavaScript”.
+        strg = new String("HelloJavaScript");
+        document.write(strg.indexOf("J"));
+
+    </script>
+</body>
+
+</html>

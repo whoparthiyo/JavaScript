@@ -1,0 +1,51 @@
+<html>
+
+<body>
+    <script>
+        //Write a JS program to find index of character ‘l’ from last position of string “Hello World”.
+        str = new String("Hello World");
+        document.write(str.lastIndexOf("l"), "<hr>");
+
+        //Write a JS program to replace value of “demo” to “text” from string “this is demo file”.
+        st1 = new String("This is Demo file");
+        document.write(st1.replace("Demo", "Text"), "<hr>");
+
+        //Write a JS program to display “ello” from the string “Hello World”.
+        document.write(str.slice(1, 5), "<hr>");
+
+        //Write a JS program to check if value “Hello” is present in string or not.
+        document.write(str.match("Hello"), "<hr>");
+
+        //Write a JavaScript function that accepts a string as a parameter and converts the string in upper case.
+        function uppercase(input) {
+            strg = input.toUpperCase();
+            return strg;
+        }
+
+        string = "hello world";
+        ans = uppercase(string)
+        document.write(ans, "<hr>")
+
+        //Write a JavaScript function to check whether an input is an array or not.
+        arr = new Array(input);
+        document.write(Array.isArray(arr), "<hr>");
+
+        //Write a simple JavaScript program to join all elements of the following array into a string.
+        array = new Array("Red", "Green", "White", "Black");
+        document.write(array.join(","), "<br>");
+        document.write(array.join("+"), "<hr>");
+
+        //Write a JavaScript program to demonstrate the use of search() function in string.
+        document.write(str.search("World"), "<hr>");
+
+        //Write a JavaScript program to demonstrate the use of split() function in string.
+        document.write(str.split(" "), "<hr>");
+
+        //Write a JavaScript program to demonstrate the use of substr() & substring() function in string.
+        document.write(str.substr(2, 4), "<br>");
+        document.write(str.substring(2, 4), "<hr>");
+
+    </script>
+</body>
+
+</html>

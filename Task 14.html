@@ -1,0 +1,126 @@
+<html>
+<head>
+    <script>
+        function show() {
+            if (frm.name.value == "" || frm.name.value == null) {
+                var x=document.getElementById("Name")
+                x.innerHTML="* enter name";
+                x.style.color="red";
+                frm.name.style.border="3px solid red";
+                frm.name.focus();
+                return false;
+            }
+            else{
+                document.getElementById("Name").innerHTML="";
+                frm.name.style.border="3px solid green";
+            }
+            let mon =frm.mon.value;
+            if (mon == "") {
+                var y=document.getElementById("Enum");
+                y.innerHTML=" *enter mobile number";
+                y.style.color="red";
+                frm.mon.style.border="3px solid red";
+                frm.mon.focus();
+                return false;
+            }
+            else if (isNaN(mon)) {
+                var z=document.getElementById("Enum");
+                z.innerHTML=" *enter digit only";
+                z.style.color="red";
+                frm.mon.focus();
+                frm.mon.style.border="2px solid red";
+                return false;
+            }
+            else if(mon.length<10){
+                let w=document.getElementById("Enum");
+                w.innerHTML=" *enter minimum 10 digit ";
+                frm.mon.style.border="2px solid red";
+                w.style.color="red";
+                return false;
+            }
+            else{
+                document.getElementById("Enum").innerHTML="";
+                frm.mon.style.border=" 2px solid green";
+            }
+
+            if ((frm.gender[0].checked == false) && (frm.gender[1].checked == false)) {
+                var a=document.getElementById("Gen");
+                a.innerHTML=" *select your gender...";
+                a.style.color="red";
+                let b=document.getElementById("G");
+                b.style.border="2px solid red";
+                b.style.width="30%";
+                return false;
+            }
+            else{
+                document.getElementById("Gen").innerHTML="";
+                let c=document.getElementById("G");
+                c.style.border="3px solid green";
+                c.style.width="30%";
+                
+            }
+
+            if ((frm.hobby[0].checked == false) && (frm.hobby[1].checked == false) &&
+                (frm.hobby[2].checked == false)) {
+                var d=document.getElementById("Hob");
+                d.innerHTML=" *Select your hobby...";
+                d.style.color="red";
+                let e=document.getElementById("H");
+                e.style.border="3px solid red";
+                e.style.width="30%";
+                return false;
+            }
+            else{
+                document.getElementById("Hob").innerHTML="";
+                let f=document.getElementById("H");
+                f.style.border="5px solid green";
+                f.style.width="30%";
+            }
+
+
+            if (frm.City.value == "-1") {
+                var g=document.getElementById("City");
+                g.innerHTML=" *Select Your city..."
+                g.style.color="red";
+                let h=document.getElementById("C");
+                h.style.border="3px solid red";
+                h.style.width="30%";
+                return false;
+            }
+            else{
+                document.getElementById("City").innerHTML="";
+               let k=document.getElementById("C");
+               k.style.border="3px solid green";
+               k.style.width="30%";
+               
+            }
+
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form name="frm" onsubmit="return show()">
+        Enter Name:<input type="text" name="name"><span id="Name"></span><br><br>
+        Enter Mobile Number:<input type="text" name="mon"><span id="Enum"></span><br><br>
+        <div id="G">Gender:<input type="radio" name="gender" value="m">male
+        <input type="radio" name="gender" value="f">female<span id="Gen"></span></div><br><br>
+       <div id="H"> Hobby:<input type="checkbox" name="hobby" value="reading">Reading
+        <input type="checkbox" name="hobby" value="Dancing">Dancing
+        <input type="checkbox" name="hobby" value="singing">singing<span id="Hob"></span></div>
+        <br><br>
+      <div id="C"> City:<select name="City">
+            <option value="-1" selected> --select city-- </option>
+            <option value="ahmedabad">ahmedabad</option>
+            <option value="surat">surat</option>
+            <option value="Rajkot">Rajkot</option>
+        </select><span id="City"></span></div>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

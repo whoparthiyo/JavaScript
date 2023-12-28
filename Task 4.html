@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <script>
+        //Take a number. If number is 1 then print Monday, 2 then print Tuesday and so on...
+        var h = 4;
+
+        if (h === 1) {
+            document.write("Monday")
+        }
+        else if (h === 2) {
+            document.write("Tuesday")
+        }
+        else if (h === 3) {
+            document.write("Wednesday")
+        }
+        else if (h === 4) {
+            document.write("Thursday")
+        }
+        else if (h === 5) {
+            document.write("Friday")
+        }
+        else if (h === 6) {
+            document.write("Saturday")
+        }
+        else if (h === 7) {
+            document.write("Sunday")
+        }
+        else {
+            document.write("Enter number between 1 to 7")
+        }
+
+        document.write("<br>")
+
+        //The ABC Insurance Company Ltd. Offers the following three categories of car insurance policy to car owners:
+        let price = 200000;
+        let category = 'B';
+
+        switch (category) {
+            case 'A':
+                document.write(price * 2 / 100);
+                break;
+            case 'B':
+                document.write(price * 3 / 100);
+                break;
+            case 'C':
+                document.write(price * 5 / 100);
+                break;
+            default:
+                document.write("Invalid Category")
+        }
+
+        document.write("<br>")
+
+        //Take a number between 1 to 12.If number is 1 then print January, 2 then print February and so on…
+        var number = 5;
+
+        switch (number) {
+            case 1:
+                document.write("January");
+                break;
+            case 2:
+                document.write("February");
+                break;
+            case 3:
+                document.write("March");
+                break;
+            case 4:
+                document.write("April");
+                break;
+            case 5:
+                document.write("May");
+                break;
+            case 6:
+                document.write("June");
+                break;
+            case 7:
+                document.write("July");
+                break;
+            case 8:
+                document.write("August");
+                break;
+            case 9:
+                document.write("September");
+                break;
+            case 10:
+                document.write("October");
+                break;
+            case 11:
+                document.write("November");
+                break;
+            case 12:
+                document.write("December");
+                break;
+            default:
+                document.write("Invalid number, choose between 1 to 12.")
+        }
+        document.write("<br>")
+
+        //Make a simple calculator using switch case.
+            var x=45;
+            var y=25;
+            var sign="*"
+
+            switch(sign){
+                case "+":
+                    var z=x+y;
+                    document.write("sum is "+z);
+                    break;
+
+                case "-":
+                    var z=x-y;
+                    document.write("substraction is "+z);
+                    break;
+                    
+                case "*":
+                    var z=x*y;
+                    document.write("Multiplication is "+z);
+                    break;
+
+                default:
+                    var z=x/y;
+                    document.write("division is "+z);
+            }
+
+            //Take a number. Generate multiplication table of that number.
+            var num=9;
+
+            for(i=0; i<=10; i++){
+                document.write(num+"*"+i+"="+num*i+"<br>")
+            }
+
+    </script>
+</head>
+
+</html>

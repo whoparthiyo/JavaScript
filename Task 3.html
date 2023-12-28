@@ -1,0 +1,140 @@
+ <html>
+
+<head></head>
+
+<body>
+    <script>
+        //Write a program to find the maximum from given four numbers
+        let w = 33;
+        let x = 62;
+        let y = 18;
+        let z = 5;
+
+        if (w > x && w > y && w > z) {
+            document.write(w, " is maximum")
+        }
+        else if (x > w && x > y && x > z) {
+            document.write(x, " is maximum")
+        }
+        else if (y > w && y > x && y > z) {
+            document.write(y, " is maximum")
+        }
+        else {
+            document.write(z, " is maximum")
+        }
+        document.write("<hr>")
+
+        //Take a number check if a number is less than 100 or not. If it is less than 100 then check if it is odd or even.
+        var q = 35;
+
+        if (q < 100) {
+            if (q % 2 === 0) {
+                document.write(q, " is less than 100 and even")
+            }
+            else {
+                document.write(q, " is less than 100 and odd")
+            }
+        }
+        else {
+            document.write(q, " is not less than 100")
+        }
+        document.write("<hr>")
+
+        //Take a number to print the square of a number if it is less than 10.
+        var a = 15;
+
+        if (a < 10) {
+            document.write("the square of ", a, " is ", a * a)
+        }
+        else {
+            document.write(a, " is not less than 10")
+        }
+        document.write("<hr>")
+
+        //Take a number and check whether it is zero, positive or negative using nested IF…ELSE statement.
+        var a1 = 19;
+
+        if (a1 >= 0) {
+            if (a1 == 0) {
+                document.write("a1 is Zero")
+            }
+            else {
+                document.write("a1 is positive")
+            }
+        }
+        else {
+            document.write("a1 is negative")
+        }
+        document.write("<hr>")
+
+        //Take 3 numbers and find greatest number using nested IF….ELSE statement.
+        let n = 5;
+        let m = 32;
+        let o = 42;
+
+        if (n >= m) {
+            if (n >= o) {
+                document.write(n, " is greatest")
+            }
+            else {
+                document.write(m, " is greatest")
+            }
+        }
+        else {
+            if (m >= o) {
+                document.write(m, " is greatest")
+            }
+            else {
+                document.write(o, " is greatest")
+            }
+        }
+        document.write("<hr>")
+
+        //Take 3 numbers and find smallest number using logical operator.
+        var p1 = 50;
+        var p2 = 30;
+        var p3 = 40;
+
+        if (p1 < p2 && p1 < p3) {
+            document.write(p1, " is smallest")
+        }
+        else if (p2 < p1 && p2 < p3) {
+            document.write(p2, " is smallest")
+        }
+        else {
+            document.write(p2, " is smallest")
+        }
+        document.write("<hr>")
+
+        //Take 5 numbers and calculate average. According to that average print grade.
+        Maths = 100;
+        Science = 72;
+        English = 53;
+        Gujarati = 94;
+        Sanskrit = 85;
+
+        avrage = (Maths + Science + English + Gujarati + Sanskrit) / 5
+
+        if (avrage < 50) {
+            document.write("Grade is F")
+        }
+        else if (avrage >= 50 && avrage < 60) {
+            document.write("Grade is D")
+        }
+        else if (avrage >= 60 && avrage < 70) {
+            document.write("Grade is c")
+        }
+        else if (avrage >= 70 && avrage < 80) {
+            document.write("Grade is B")
+        }
+        else if (avrage >= 80 && avrage < 90) {
+            document.write("Grade is A")
+        }
+        else {
+            document.write("Grade is A+")
+        }
+
+    </script>
+</body>
+
+</html>

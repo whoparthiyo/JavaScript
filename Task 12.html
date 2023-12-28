@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <script>
+        function validation() {
+            var myname = frm.name.value;
+            if (myname == null || myname == "") {
+                alert("Enter Name");
+                frm.name.focus();
+                return false;
+            }
+
+            var mno = document.frm.num.value;
+            if (mno == "") {
+                alert("Enter Mobile No");
+                frm.num.focus();
+                return false;
+
+            }
+            else if (isNaN(mno)) {
+                alert("Enter Digits Only");
+                frm.num.focus();
+                return false;
+            }
+
+            if ((document.frm.gender[0].checked == false) && (document.frm.gender[1].checked == false)) {
+                alert("Select your gender...");
+                return false;
+            }
+
+            if ((document.frm.Hobby[0].checked == false) && (document.frm.Hobby[1].checked == false) &&
+                (document.frm.Hobby[2].checked == false)) {
+                alert("Select your hobby...");
+                return false;
+            }
+
+            if (document.frm.city.value == "-1") {
+                alert("Select your city...");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm" onsubmit="return validation()">
+        Enter Name:<input type="text" name="name"></br></br>
+        Enter Number:<input type="text" name="num"></br></br>
+        Gender:<input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female</br></br>
+        Hobby:<input type="checkbox" name="Hobby" value="Reading">Reading
+        <input type="checkbox" name="Hobby" value="Dancing">Dancing
+        <input type="checkbox" name="Hobby" value="Singing">Singing</br></br>
+        City:<select name="city">
+            <option value="-1" selected>---Select City---</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+        </select></br></br>
+        <input type="submit" value="submit data">
+
+    </form>
+</body>
+
+</html>
